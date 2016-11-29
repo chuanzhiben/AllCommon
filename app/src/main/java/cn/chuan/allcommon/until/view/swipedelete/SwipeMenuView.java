@@ -1,4 +1,4 @@
-package cn.chuan.allcommon.until.view.swipdelete;
+package cn.chuan.allcommon.until.view.swipedelete;
 
 import android.text.TextUtils;
 import android.view.Gravity;

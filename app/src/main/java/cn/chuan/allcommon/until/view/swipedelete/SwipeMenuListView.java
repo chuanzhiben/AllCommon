@@ -1,4 +1,4 @@
-package cn.chuan.allcommon.until.view.swipdelete;
+package cn.chuan.allcommon.until.view.swipedelete;
 
 import android.content.Context;
 import android.support.v4.view.MotionEventCompat;
