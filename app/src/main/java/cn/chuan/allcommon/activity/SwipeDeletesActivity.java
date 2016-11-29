@@ -18,7 +18,7 @@ import cn.chuan.allcommon.R;
 import cn.chuan.allcommon.adapter.MainAdapter;
 import cn.chuan.allcommon.common.ConStants;
 
-public class SecondActivity extends Activity {
+public class SwipeDeletesActivity extends Activity {
 
     List<String> list;
     MainAdapter adapter;
@@ -36,7 +36,7 @@ public class SecondActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         ButterKnife.bind(this);
-        context = SecondActivity.this;
+        context = SwipeDeletesActivity.this;
         Bundle bundle = getIntent().getExtras();
         name = bundle.getString(ConStants.b1);
         list = new ArrayList<>();
