@@ -15,8 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ScrollerDeleteActivity">
-        </activity>
+        <activity
+            android:name=".activity.SecondActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.SwipeDeletelistActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

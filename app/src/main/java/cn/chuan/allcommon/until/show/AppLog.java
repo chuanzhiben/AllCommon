@@ -1,4 +1,6 @@
-package cn.chuan.allcommon;
+package cn.chuan.allcommon.until.show;
+
+import cn.chuan.allcommon.BuildConfig;
 
 /**
  * Wrapper API for sending log output.
