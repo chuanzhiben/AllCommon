@@ -41,6 +41,7 @@ public class SwipeDeletesActivity extends Activity {
         name = bundle.getString(ConStants.b1);
         list = new ArrayList<>();
         list.add("滑动删除1,适配器内部设置事件");
+        list.add("滑动删除2,slidelist");
         adapter = new MainAdapter(context, list);
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -64,7 +65,15 @@ public class SwipeDeletesActivity extends Activity {
                 Intent intent = new Intent(context, SwipeDeletelistActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putString(ConStants.b1, list.get(i));
-                intent.putExtras(bundle);startActivity(intent);
+                intent.putExtras(bundle);
+                startActivity(intent);
+                break;
+            case 1:
+                intent = new Intent(context, SlideDeleteActivity.class);
+                bundle = new Bundle();
+                bundle.putString(ConStants.b1, list.get(i));
+                intent.putExtras(bundle);
+                startActivity(intent);
                 break;
             default:
                 break;

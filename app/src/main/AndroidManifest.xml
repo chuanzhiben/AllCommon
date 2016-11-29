@@ -30,6 +30,9 @@
         <activity
             android:name=".activity.ABackActivity"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.SlideDeleteActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
