@@ -22,6 +22,9 @@
             android:name=".activity.SwipeDeletelistActivity"
             android:screenOrientation="portrait"></activity>
         <activity
+            android:name=".activity.LoadAnimActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".activity.SwipeBackActivity"
             android:screenOrientation="portrait"></activity>
         <activity
@@ -32,6 +35,9 @@
             android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.SlideDeleteActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.Loading58Activity"
             android:screenOrientation="portrait"></activity>
     </application>
 

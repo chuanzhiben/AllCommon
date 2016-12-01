@@ -14,12 +14,11 @@ import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 import cn.chuan.allcommon.R;
 import cn.chuan.allcommon.adapter.MainAdapter;
 import cn.chuan.allcommon.common.ConStants;
 
-public class ABackActivity extends Activity {
+public class LoadAnimActivity extends Activity {
     List<String> list;
     MainAdapter adapter;
     Activity context;
@@ -36,12 +35,11 @@ public class ABackActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         ButterKnife.bind(this);
-        context = ABackActivity.this;
+        context = LoadAnimActivity.this;
         Bundle bundle = getIntent().getExtras();
         name = bundle.getString(ConStants.b1);
         list = new ArrayList<>();
-        list.add("activity返回,GestureBackActivity");
-        list.add("activity返回,SwipeBackActivity");
+        list.add("仿58同城的加载动画,GestureBackActivity");
         adapter = new MainAdapter(context, list);
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -50,13 +48,19 @@ public class ABackActivity extends Activity {
                 gotos(i);
             }
         });
+        lBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         tvTile.setText(name);
     }
 
     private void gotos(int i) {
         switch (i) {
             case 0:
-                Intent intent = new Intent(context, GestureBackActivity.class);
+                Intent intent = new Intent(context, Loading58Activity.class);
                 Bundle bundle = new Bundle();
                 bundle.putString(ConStants.b1, list.get(i));
                 intent.putExtras(bundle);
@@ -72,10 +76,5 @@ public class ABackActivity extends Activity {
             default:
                 break;
         }
-    }
-
-    @OnClick(R.id.l_back)
-    public void onClick() {
-        finish();
     }
 }

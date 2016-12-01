@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import cn.chuan.allcommon.R;
 import cn.chuan.allcommon.common.ConStants;
 
@@ -30,12 +31,10 @@ public class GestureBackActivity extends cn.chuan.allcommon.baseactivity.Gesture
         Bundle bundle = getIntent().getExtras();
         name = bundle.getString(ConStants.b1);
         tvTile.setText(name);
+    }
 
-        lBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+    @OnClick(R.id.l_back)
+    public void onClick() {
+        finish();
     }
 }

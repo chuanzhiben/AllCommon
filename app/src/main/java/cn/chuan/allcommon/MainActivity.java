@@ -14,6 +14,7 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import cn.chuan.allcommon.activity.ABackActivity;
+import cn.chuan.allcommon.activity.LoadAnimActivity;
 import cn.chuan.allcommon.activity.SwipeDeletesActivity;
 import cn.chuan.allcommon.adapter.MainAdapter;
 import cn.chuan.allcommon.common.ConStants;
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         list = new ArrayList<>();
         list.add("滑动删除控件集合");
         list.add("activity跳转返回效果");
+        list.add("加载效果集合");
         adapter = new MainAdapter(context, list);
         mainListview.setAdapter(adapter);
         mainListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -57,6 +59,13 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 1:
                 intent = new Intent(context, ABackActivity.class);
+                bundle = new Bundle();
+                bundle.putString(ConStants.b1, list.get(i));
+                intent.putExtras(bundle);
+                startActivity(intent);
+                break;
+            case 2:
+                intent = new Intent(context, LoadAnimActivity.class);
                 bundle = new Bundle();
                 bundle.putString(ConStants.b1, list.get(i));
                 intent.putExtras(bundle);

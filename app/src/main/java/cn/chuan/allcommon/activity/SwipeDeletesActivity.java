@@ -14,6 +14,7 @@ import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import cn.chuan.allcommon.R;
 import cn.chuan.allcommon.adapter.MainAdapter;
 import cn.chuan.allcommon.common.ConStants;
@@ -50,12 +51,6 @@ public class SwipeDeletesActivity extends Activity {
                 gotos(i);
             }
         });
-        lBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
         tvTile.setText(name);
     }
 
@@ -78,5 +73,10 @@ public class SwipeDeletesActivity extends Activity {
             default:
                 break;
         }
+    }
+
+    @OnClick(R.id.l_back)
+    public void onClick() {
+        finish();
     }
 }

@@ -15,6 +15,7 @@ import java.util.LinkedList;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import cn.chuan.allcommon.R;
 import cn.chuan.allcommon.adapter.NewsAdapter;
 import cn.chuan.allcommon.bean.RecentChat;
@@ -63,12 +64,6 @@ public class SwipeDeletelistActivity extends Activity {
         tile = bundle.getString(ConStants.b1);
         initView();
         tvTile.setText(tile);
-        lBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
     }
 
     private void initView() {
@@ -149,5 +144,10 @@ public class SwipeDeletelistActivity extends Activity {
     private int dp2px(int dp) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp,
                 getResources().getDisplayMetrics());
+    }
+
+    @OnClick(R.id.l_back)
+    public void onClick() {
+        finish();
     }
 }
