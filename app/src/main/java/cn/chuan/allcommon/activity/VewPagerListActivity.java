@@ -41,6 +41,7 @@ public class VewPagerListActivity extends Activity {
         name = bundle.getString(ConStants.b1);
         list = new ArrayList<>();
         list.add("滑动viewpager,嵌套fragment");
+        list.add("滑动viewpager,嵌套fragment,简约模式");
         adapter = new MainAdapter(context, list);
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -57,6 +58,13 @@ public class VewPagerListActivity extends Activity {
             case 0:
                 Intent intent = new Intent(context, VPagerFActivity.class);
                 Bundle bundle = new Bundle();
+                bundle.putString(ConStants.b1, list.get(i));
+                intent.putExtras(bundle);
+                startActivity(intent);
+                break;
+            case 1:
+                intent = new Intent(context, VPagerfgActivity.class);
+                bundle = new Bundle();
                 bundle.putString(ConStants.b1, list.get(i));
                 intent.putExtras(bundle);
                 startActivity(intent);

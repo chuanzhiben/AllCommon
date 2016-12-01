@@ -1,4 +1,4 @@
-package cn.chuan.allcommon.baseactivity;
+package cn.chuan.allcommon.base;
 
 import android.app.Activity;
 import android.os.Bundle;

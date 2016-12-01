@@ -2,7 +2,6 @@ package cn.chuan.allcommon.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -12,7 +11,7 @@ import butterknife.OnClick;
 import cn.chuan.allcommon.R;
 import cn.chuan.allcommon.common.ConStants;
 
-public class GestureBackActivity extends cn.chuan.allcommon.baseactivity.GestureBackActivity {
+public class GestureBackActivity extends cn.chuan.allcommon.base.GestureBackActivity {
     @Bind(R.id.l_back)
     LinearLayout lBack;
     @Bind(R.id.tv_tile)

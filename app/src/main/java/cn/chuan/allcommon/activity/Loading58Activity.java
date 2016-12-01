@@ -13,10 +13,9 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.chuan.allcommon.R;
-import cn.chuan.allcommon.baseactivity.*;
 import cn.chuan.allcommon.common.ConStants;
 
-public class Loading58Activity extends cn.chuan.allcommon.baseactivity.SwipeBackActivity {
+public class Loading58Activity extends cn.chuan.allcommon.base.SwipeBackActivity {
     ShapeLoadingDialog shapeLoadingDialog;
     @Bind(R.id.l_back)
     LinearLayout lBack;
