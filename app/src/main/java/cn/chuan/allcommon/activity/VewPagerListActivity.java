@@ -42,6 +42,7 @@ public class VewPagerListActivity extends Activity {
         list = new ArrayList<>();
         list.add("滑动viewpager,嵌套fragment");
         list.add("滑动viewpager,嵌套fragment,简约模式");
+        list.add("滑动viewpager,嵌套fragment,GradientTabStripActivity底部滑动动态模式");
         adapter = new MainAdapter(context, list);
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -64,6 +65,13 @@ public class VewPagerListActivity extends Activity {
                 break;
             case 1:
                 intent = new Intent(context, VPagerfgActivity.class);
+                bundle = new Bundle();
+                bundle.putString(ConStants.b1, list.get(i));
+                intent.putExtras(bundle);
+                startActivity(intent);
+                break;
+            case 2:
+                intent = new Intent(context, GradientTabStripActivity.class);
                 bundle = new Bundle();
                 bundle.putString(ConStants.b1, list.get(i));
                 intent.putExtras(bundle);
