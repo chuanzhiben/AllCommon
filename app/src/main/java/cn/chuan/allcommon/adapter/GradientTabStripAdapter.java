@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.content.ContextCompat;
 
 import cn.chuan.allcommon.R;
-import cn.chuan.allcommon.until.widget.GradientTabStrip;
+import cn.chuan.allcommon.widget.GradientTabStrip;
 
 public class GradientTabStripAdapter extends FragmentPagerAdapter implements
         GradientTabStrip.GradientTabAdapter {

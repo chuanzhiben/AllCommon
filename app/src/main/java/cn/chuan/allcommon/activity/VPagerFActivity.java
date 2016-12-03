@@ -19,7 +19,7 @@ import cn.chuan.allcommon.adapter.ItemTitlePagerAdapter;
 import cn.chuan.allcommon.fragment.GoodsCommentFragment;
 import cn.chuan.allcommon.fragment.GoodsDetailFragment;
 import cn.chuan.allcommon.fragment.GoodsInfoFragment;
-import cn.chuan.allcommon.until.widget.NoScrollViewPager;
+import cn.chuan.allcommon.widget.NoScrollViewPager;
 
 public class VPagerFActivity extends AppCompatActivity {
     @Bind(R.id.ll_back)

@@ -52,6 +52,14 @@
         <activity
             android:name=".activity.GradientTabStripActivity"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.RecycleListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.RecycleActivity"
+            android:supportsRtl="true"
+            android:theme="@style/recycle"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

@@ -9,7 +9,7 @@ import am.widget.basetabstrip.BaseTabStrip;
 import cn.chuan.allcommon.R;
 import cn.chuan.allcommon.adapter.GradientTabStripAdapter;
 import cn.chuan.allcommon.base.BaseActivity;
-import cn.chuan.allcommon.until.widget.GradientTabStrip;
+import cn.chuan.allcommon.widget.GradientTabStrip;
 
 public class GradientTabStripActivity extends BaseActivity implements
         ViewPager.OnPageChangeListener, BaseTabStrip.OnItemClickListener {

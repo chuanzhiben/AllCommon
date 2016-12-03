@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <cn.chuan.allcommon.until.view.swipedelete.ListViewCompat
+    <cn.chuan.allcommon.view.swipedelete.ListViewCompat
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -30,7 +30,7 @@ import cn.chuan.allcommon.activity.VPagerFActivity;
 import cn.chuan.allcommon.adapter.ItemRecommendAdapter;
 import cn.chuan.allcommon.adapter.NetworkImageHolderView;
 import cn.chuan.allcommon.bean.RecommendGoodsBean;
-import cn.chuan.allcommon.until.widget.SlideDetailsLayout;
+import cn.chuan.allcommon.widget.SlideDetailsLayout;
 
 /**
  * item页ViewPager里的商品Fragment

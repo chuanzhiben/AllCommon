@@ -32,8 +32,6 @@ public class VPagerfgActivity extends AppCompatActivity {
     RadioGroup rg;
     @Bind(R.id.vp)
     ViewPager vp;
-    @Bind(R.id.activity_main)
-    LinearLayout activityMain;
     String name;
 
     @Override

@@ -10,7 +10,7 @@
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <cn.chuan.allcommon.until.widget.SlideDetailsLayout
+        <cn.chuan.allcommon.widget.SlideDetailsLayout
             android:id="@+id/sv_switch"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -331,7 +331,7 @@
             </ScrollView>
 
             <include layout="@layout/include_item_tab" />
-        </cn.chuan.allcommon.until.widget.SlideDetailsLayout>
+        </cn.chuan.allcommon.widget.SlideDetailsLayout>
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab_up_slide"

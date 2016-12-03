@@ -42,4 +42,20 @@
         <item name="android:textSize">18sp</item>
         <item name="android:singleLine">true</item>
     </style>
+    <!-- Base application theme. -->
+    <style name="recycle" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:listDivider">@drawable/divider</item>
+    </style>
+    <!-- 防止欢迎页白屏或者黑屏，设置图片 -->
+    <!--<style name="SplashTheme" parent="AppTheme">-->
+        <!--<item name="android:windowBackground">@drawable/img_welcome</item>-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+        <!--&lt;!&ndash;<item name="android:windowIsTranslucent">false</item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<item name="android:windowDisablePreview">true</item>&ndash;&gt;-->
+    <!--</style>-->
 </resources>

@@ -1,8 +1,6 @@
 package cn.chuan.allcommon.activity;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -22,8 +20,8 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import cn.chuan.allcommon.R;
-import cn.chuan.allcommon.until.view.swipedelete.ListViewCompat;
-import cn.chuan.allcommon.until.view.swipedelete.SlideView;
+import cn.chuan.allcommon.view.swipedelete.ListViewCompat;
+import cn.chuan.allcommon.view.swipedelete.SlideView;
 
 public class SlideDeleteActivity extends Activity implements OnItemClickListener, OnClickListener,
         SlideView.OnSlideListener {

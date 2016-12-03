@@ -9,7 +9,7 @@ import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
 
 import cn.chuan.allcommon.R;
-import cn.chuan.allcommon.until.view.layout.SwipeBackLayout;
+import cn.chuan.allcommon.view.layout.SwipeBackLayout;
 
 /**
  * @Description:滑动返回，随着指尖滑动返回

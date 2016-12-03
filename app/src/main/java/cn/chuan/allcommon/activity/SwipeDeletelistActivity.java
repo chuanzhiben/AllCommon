@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.TypedValue;
-import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -20,10 +19,10 @@ import cn.chuan.allcommon.R;
 import cn.chuan.allcommon.adapter.NewsAdapter;
 import cn.chuan.allcommon.bean.RecentChat;
 import cn.chuan.allcommon.common.ConStants;
-import cn.chuan.allcommon.until.view.swipedelete.SwipeMenu;
-import cn.chuan.allcommon.until.view.swipedelete.SwipeMenuCreator;
-import cn.chuan.allcommon.until.view.swipedelete.SwipeMenuItem;
-import cn.chuan.allcommon.until.view.swipedelete.SwipeMenuListView;
+import cn.chuan.allcommon.view.swipedelete.SwipeMenu;
+import cn.chuan.allcommon.view.swipedelete.SwipeMenuCreator;
+import cn.chuan.allcommon.view.swipedelete.SwipeMenuItem;
+import cn.chuan.allcommon.view.swipedelete.SwipeMenuListView;
 
 public class SwipeDeletelistActivity extends Activity {
 
