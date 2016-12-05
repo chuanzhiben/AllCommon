@@ -1,4 +1,4 @@
-package cn.chuan.allcommon.fragment;
+package cn.chuan.allcommon.fragments.viewpagerf;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.chuan.allcommon.R;
-import cn.chuan.allcommon.activity.VPagerFActivity;
+import cn.chuan.allcommon.activitys.viewpager.VPagerFActivity;
 
 /**
  * item页ViewPager里的详情Fragment

@@ -14,9 +14,9 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import cn.chuan.allcommon.activity.ABackActivity;
+import cn.chuan.allcommon.activity.DeleteItemListActivity;
 import cn.chuan.allcommon.activity.LoadAnimActivity;
 import cn.chuan.allcommon.activity.RecycleListActivity;
-import cn.chuan.allcommon.activity.SwipeDeletesActivity;
 import cn.chuan.allcommon.activity.VewPagerListActivity;
 import cn.chuan.allcommon.adapter.MainAdapter;
 import cn.chuan.allcommon.common.ConStants;
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     private void gotos(int i) {
         switch (i) {
             case 0:
-                Intent intent = new Intent(context, SwipeDeletesActivity.class);
+                Intent intent = new Intent(context, DeleteItemListActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putString(ConStants.b1, list.get(i));
                 intent.putExtras(bundle);

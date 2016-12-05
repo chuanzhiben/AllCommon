@@ -16,10 +16,16 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.chuan.allcommon.R;
+import cn.chuan.allcommon.activitys.deleteview.SlideDeleteActivity;
+import cn.chuan.allcommon.activitys.deleteview.SwipeDeletelistActivity;
 import cn.chuan.allcommon.adapter.MainAdapter;
 import cn.chuan.allcommon.common.ConStants;
 
-public class SwipeDeletesActivity extends Activity {
+/**
+ * Created by chuan on 16/12/5.
+ */
+
+public class DeleteItemListActivity  extends Activity {
 
     List<String> list;
     MainAdapter adapter;
@@ -37,7 +43,7 @@ public class SwipeDeletesActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         ButterKnife.bind(this);
-        context = SwipeDeletesActivity.this;
+        context = DeleteItemListActivity.this;
         Bundle bundle = getIntent().getExtras();
         name = bundle.getString(ConStants.b1);
         list = new ArrayList<>();

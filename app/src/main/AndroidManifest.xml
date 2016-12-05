@@ -3,11 +3,11 @@
     package="cn.chuan.allcommon">
 
     <application
+        android:name=".until.manager.HqApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:name=".until.manager.HqApplication"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -17,49 +17,49 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.SwipeDeletesActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".activity.SwipeDeletelistActivity"
+            android:name=".activity.DeleteItemListActivity"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.LoadAnimActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".activity.SwipeBackActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".activity.GestureBackActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
             android:name=".activity.ABackActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".activity.SlideDeleteActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".activity.Loading58Activity"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.VewPagerListActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".activity.VPagerFActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".activity.VPagerfgActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".activity.GradientTabStripActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
             android:name=".activity.RecycleListActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".activity.RecycleActivity"
-            android:supportsRtl="true"
-            android:theme="@style/recycle"
+            android:name=".activitys.deleteview.SwipeDeletelistActivity"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activitys.deleteview.SlideDeleteActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activitys.acback.SwipeBackActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activitys.acback.GestureBackActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activitys.loading.Loading58Activity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activitys.viewpager.VPagerFActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activitys.viewpager.VPagerfgActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activitys.viewpager.GradientTabStripActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activitys.recycle.RecycleActivity"
+            android:screenOrientation="portrait"
+            android:supportsRtl="true"
+            android:theme="@style/recycle"></activity>
     </application>
 
 </manifest>

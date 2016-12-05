@@ -14,7 +14,9 @@ import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import cn.chuan.allcommon.R;
+import cn.chuan.allcommon.activitys.loading.Loading58Activity;
 import cn.chuan.allcommon.adapter.MainAdapter;
 import cn.chuan.allcommon.common.ConStants;
 
@@ -66,13 +68,13 @@ public class LoadAnimActivity extends Activity {
                 intent.putExtras(bundle);
                 startActivity(intent);
                 break;
-            case 1:
-                intent = new Intent(context, SwipeBackActivity.class);
-                bundle = new Bundle();
-                bundle.putString(ConStants.b1, list.get(i));
-                intent.putExtras(bundle);
-                startActivity(intent);
-                break;
+//            case 1:
+//                intent = new Intent(context, SwipeBackActivity.class);
+//                bundle = new Bundle();
+//                bundle.putString(ConStants.b1, list.get(i));
+//                intent.putExtras(bundle);
+//                startActivity(intent);
+//                break;
             default:
                 break;
         }

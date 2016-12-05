@@ -1,4 +1,4 @@
-package cn.chuan.allcommon.fragment;
+package cn.chuan.allcommon.fragments.viewpagerf;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import cn.chuan.allcommon.R;
-import cn.chuan.allcommon.activity.VPagerFActivity;
+import cn.chuan.allcommon.activitys.viewpager.VPagerFActivity;
 
 /**
  * item页ViewPager里的评价Fragment

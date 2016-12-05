@@ -7,8 +7,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ListView;
 
+import cn.chuan.allcommon.activitys.deleteview.SlideDeleteActivity;
 
-import cn.chuan.allcommon.activity.SlideDeleteActivity;
 
 public class ListViewCompat extends ListView {
 

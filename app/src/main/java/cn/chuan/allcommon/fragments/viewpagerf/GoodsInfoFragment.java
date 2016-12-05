@@ -1,4 +1,4 @@
-package cn.chuan.allcommon.fragment;
+package cn.chuan.allcommon.fragments.viewpagerf;
 
 import android.content.Context;
 import android.graphics.Paint;
@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.chuan.allcommon.R;
-import cn.chuan.allcommon.activity.VPagerFActivity;
+import cn.chuan.allcommon.activitys.viewpager.VPagerFActivity;
 import cn.chuan.allcommon.adapter.ItemRecommendAdapter;
 import cn.chuan.allcommon.adapter.NetworkImageHolderView;
 import cn.chuan.allcommon.bean.RecommendGoodsBean;

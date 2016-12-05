@@ -1,4 +1,4 @@
-package cn.chuan.allcommon.fragment;
+package cn.chuan.allcommon.fragments.viewpagerf;
 
 import android.util.Log;
 
