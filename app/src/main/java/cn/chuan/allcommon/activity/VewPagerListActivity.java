@@ -16,6 +16,9 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.chuan.allcommon.R;
+import cn.chuan.allcommon.activitys.viewpager.GradientTabStripActivity;
+import cn.chuan.allcommon.activitys.viewpager.VPagerFActivity;
+import cn.chuan.allcommon.activitys.viewpager.VPagerfgActivity;
 import cn.chuan.allcommon.adapter.MainAdapter;
 import cn.chuan.allcommon.common.ConStants;
 

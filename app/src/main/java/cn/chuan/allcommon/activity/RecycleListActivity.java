@@ -16,6 +16,8 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.chuan.allcommon.R;
+import cn.chuan.allcommon.activitys.acback.SwipeBackActivity;
+import cn.chuan.allcommon.activitys.recycle.RecycleActivity;
 import cn.chuan.allcommon.adapter.MainAdapter;
 import cn.chuan.allcommon.common.ConStants;
 
