@@ -1,1 +1,1 @@
-include ':app', ':androidutilcode'
+include ':app', ':androidutilcode', ':SuperRecycleView', ':superlibrary', ':ninegridview', ':NGView'

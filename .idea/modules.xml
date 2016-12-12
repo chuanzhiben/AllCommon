@@ -3,8 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Allcommon.iml" filepath="$PROJECT_DIR$/Allcommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NGView/NGView.iml" filepath="$PROJECT_DIR$/NGView/NGView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SuperRecycleView/SuperRecycleView.iml" filepath="$PROJECT_DIR$/SuperRecycleView/SuperRecycleView.iml" />
       <module fileurl="file://$PROJECT_DIR$/androidutilcode/androidutilcode.iml" filepath="$PROJECT_DIR$/androidutilcode/androidutilcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ninegridview/ninegridview.iml" filepath="$PROJECT_DIR$/ninegridview/ninegridview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/superlibrary/superlibrary.iml" filepath="$PROJECT_DIR$/superlibrary/superlibrary.iml" />
     </modules>
   </component>
 </project>
