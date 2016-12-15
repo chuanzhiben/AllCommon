@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="whites">#ffffff</color>
+    <color name="main_tv1">#f37b07</color>
+    <!-- 暗灰色 -->
+    <color name="dimgrey">#696969</color>
+    <color name="gray">#D9D9D9</color>
+    <!-- 雪白色 -->
+    <color name="floralwhite">#FFFAF0</color>
+    <!-- 灰色 -->
+    <color name="grey">#808080</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ec0f38</color>
+    <color name="orange">#ff7f66</color>
+</resources>
