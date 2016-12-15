@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/SuperRecycleView/SuperRecycleView.iml" filepath="$PROJECT_DIR$/SuperRecycleView/SuperRecycleView.iml" />
       <module fileurl="file://$PROJECT_DIR$/androidutilcode/androidutilcode.iml" filepath="$PROJECT_DIR$/androidutilcode/androidutilcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arcgis-google&amp;&amp;tmap/arcgis-google&amp;&amp;tmap.iml" filepath="$PROJECT_DIR$/arcgis-google&amp;&amp;tmap/arcgis-google&amp;&amp;tmap.iml" />
       <module fileurl="file://$PROJECT_DIR$/ninegridview/ninegridview.iml" filepath="$PROJECT_DIR$/ninegridview/ninegridview.iml" />
       <module fileurl="file://$PROJECT_DIR$/superlibrary/superlibrary.iml" filepath="$PROJECT_DIR$/superlibrary/superlibrary.iml" />
     </modules>
