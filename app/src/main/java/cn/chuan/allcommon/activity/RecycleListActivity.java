@@ -16,8 +16,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.chuan.allcommon.R;
-import cn.chuan.allcommon.activitys.acback.SwipeBackActivity;
-import cn.chuan.allcommon.activitys.recycle.RecycleActivity;
+import cn.chuan.allcommon.activitys.recycle.*;
 import cn.chuan.allcommon.adapter.MainAdapter;
 import cn.chuan.allcommon.common.ConStants;
 
@@ -41,8 +40,11 @@ public class RecycleListActivity extends Activity {
         context = RecycleListActivity.this;
         Bundle bundle = getIntent().getExtras();
         name = bundle.getString(ConStants.b1);
+        tvTile.setText(name);
         list = new ArrayList<>();
         list.add("Recycle样板模式");
+        list.add("Recycle样板模式FamiliarRecyclerView");
+        list.add("Recycle样板模式SuperRecycle");
         adapter = new MainAdapter(context, list);
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -51,7 +53,6 @@ public class RecycleListActivity extends Activity {
                 gotos(i);
             }
         });
-        tvTile.setText(name);
     }
 
     private void gotos(int i) {
@@ -64,7 +65,14 @@ public class RecycleListActivity extends Activity {
                 startActivity(intent);
                 break;
             case 1:
-                intent = new Intent(context, SwipeBackActivity.class);
+                intent = new Intent(context, Recycle1Activity.class);
+                bundle = new Bundle();
+                bundle.putString(ConStants.b1, list.get(i));
+                intent.putExtras(bundle);
+                startActivity(intent);
+                break;
+            case 2:
+                intent = new Intent(context, SuperRecycleActivity.class);
                 bundle = new Bundle();
                 bundle.putString(ConStants.b1, list.get(i));
                 intent.putExtras(bundle);

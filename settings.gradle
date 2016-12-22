@@ -1,1 +1,2 @@
-include ':app', ':androidutilcode', ':SuperRecycleView', ':superlibrary', ':ninegridview', ':NGView', ':arcgis-google&&tmap'
+
+include ':app'

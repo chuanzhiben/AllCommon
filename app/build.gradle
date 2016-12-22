@@ -1,15 +1,21 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
     defaultConfig {
         applicationId "cn.chuan.allcommon"
-        minSdkVersion 14
-        targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
     }
     buildTypes {
         release {
@@ -19,20 +25,42 @@ android {
     }
 }
 repositories {
-    maven {
-        url "https://jitpack.io"
-    }
+    jcenter()
+    maven { url 'https://esri.bintray.com/arcgis' }
+    maven { url "https://jitpack.io" }
+
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.android.support:design:24.2.1'
-    compile 'com.android.support:cardview-v7:24.0.+'
-    compile 'com.jakewharton:butterknife:7.0.1'
-    compile 'com.github.zzz40500:android-shapeLoadingView:1.0.3.2'
-    compile 'com.facebook.fresco:fresco:0.9.0'
-    compile 'com.gxz.pagerslidingtabstrip:library:1.3'
-    compile 'com.bigkoo:convenientbanner:2.0.5'
-    compile 'am.widget:basetabstrip:25.0.1'
-    compile 'com.yinglan.imageloadingview:library:0.1.0'
+    compile rootProject.ext.deps.appcompatV7
+    compile rootProject.ext.deps.design
+
+    // RxAndroid
+    compile rootProject.ext.deps.rxAndroid
+    compile rootProject.ext.deps.rxJava
+    compile rootProject.ext.deps.butterknife
+    compile rootProject.ext.deps.cardview
+    compile rootProject.ext.deps.ShapeLoadingView
+    compile rootProject.ext.deps.fresco
+    compile rootProject.ext.deps.ptabstrip
+    compile rootProject.ext.deps.convenientbanner
+    compile rootProject.ext.deps.basetabstrip
+    compile rootProject.ext.deps.imageloadingview
+    compile rootProject.ext.deps.gson
+    compile rootProject.ext.deps.ultraptr
+    compile rootProject.ext.deps.okhttputils
+    compile rootProject.ext.deps.viewcore
+    compile rootProject.ext.deps.xutils
+    compile rootProject.ext.deps.picasso
+    compile rootProject.ext.deps.glide
+    compile rootProject.ext.deps.unimageloader
+    compile rootProject.ext.deps.ninegridview
+    compile rootProject.ext.deps.superrecycleview
+    compile rootProject.ext.deps.recycleanim
+    compile rootProject.ext.deps.familiarrecyclerview
+    compile rootProject.ext.deps.arcgis
+    // LeakCanary
+    debugCompile rootProject.ext.deps.leakcanaryAndroid
+    releaseCompile rootProject.ext.deps.leakcanaryAndroidNoOp
+    testCompile rootProject.ext.deps.leakcanaryAndroidNoOp
 }

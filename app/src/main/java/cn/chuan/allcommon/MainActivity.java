@@ -14,8 +14,10 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import cn.chuan.allcommon.activity.ABackActivity;
+import cn.chuan.allcommon.activity.AndroidUntilsActivity;
 import cn.chuan.allcommon.activity.DeleteItemListActivity;
 import cn.chuan.allcommon.activity.LoadAnimActivity;
+import cn.chuan.allcommon.activity.NinePicActivity;
 import cn.chuan.allcommon.activity.RecycleListActivity;
 import cn.chuan.allcommon.activity.VewPagerListActivity;
 import cn.chuan.allcommon.adapter.MainAdapter;
@@ -42,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
         list.add("加载效果集合");
         list.add("滑动界面");
         list.add("Recycle样板模式");
+        list.add("android基本工具类");
+        list.add("九宫格图片展示样例");
+        list.add("arcgis图层添加Google&天地图");
         adapter = new MainAdapter(context, list);
         mainListview.setAdapter(adapter);
         mainListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -83,6 +88,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             case 4:
                 intent = new Intent(context, RecycleListActivity.class);
+                bundle = new Bundle();
+                bundle.putString(ConStants.b1, list.get(i));
+                intent.putExtras(bundle);
+                startActivity(intent);
+                break;
+            case 5:
+                intent = new Intent(context, AndroidUntilsActivity.class);
+                bundle = new Bundle();
+                bundle.putString(ConStants.b1, list.get(i));
+                intent.putExtras(bundle);
+                startActivity(intent);
+                break;
+            case 6:
+                intent = new Intent(context, NinePicActivity.class);
                 bundle = new Bundle();
                 bundle.putString(ConStants.b1, list.get(i));
                 intent.putExtras(bundle);
