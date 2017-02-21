@@ -24,12 +24,6 @@ android {
         }
     }
 }
-repositories {
-    jcenter()
-    maven { url 'https://esri.bintray.com/arcgis' }
-    maven { url "https://jitpack.io" }
-
-}
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile rootProject.ext.deps.appcompatV7
@@ -59,6 +53,10 @@ dependencies {
     compile rootProject.ext.deps.recycleanim
     compile rootProject.ext.deps.familiarrecyclerview
     compile rootProject.ext.deps.arcgis
+    compile rootProject.ext.deps.LRecyclerView
+    compile rootProject.ext.deps.nineoldandroids
+    compile rootProject.ext.deps.LoopViewPagerLayout
+
     // LeakCanary
     debugCompile rootProject.ext.deps.leakcanaryAndroid
     releaseCompile rootProject.ext.deps.leakcanaryAndroidNoOp
