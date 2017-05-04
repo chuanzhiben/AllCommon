@@ -85,6 +85,9 @@
             android:name=".activitys.viewpager.VPagerfgActivity"
             android:screenOrientation="portrait"></activity>
         <activity
+            android:name=".activitys.viewpager.ScrollingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".activitys.viewpager.GradientTabStripActivity"
             android:screenOrientation="portrait"></activity>
         <activity
@@ -165,6 +168,15 @@
             android:theme="@style/SupercycleThem" />
         <activity android:name=".activitys.recycle.ImitateStaggeredGridViewDemoActivity"
             android:theme="@style/SupercycleThem" />
+
+
+        <activity
+            android:name=".activity.DialogListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activitys.dialog.LemonActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

@@ -56,6 +56,7 @@ dependencies {
     compile rootProject.ext.deps.LRecyclerView
     compile rootProject.ext.deps.nineoldandroids
     compile rootProject.ext.deps.LoopViewPagerLayout
+    compile rootProject.ext.deps.LemonBubble4Android
 
     // LeakCanary
     debugCompile rootProject.ext.deps.leakcanaryAndroid

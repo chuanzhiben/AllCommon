@@ -20,6 +20,7 @@ import cn.chuan.allcommon.activity.LoadAnimActivity;
 import cn.chuan.allcommon.activity.NinePicActivity;
 import cn.chuan.allcommon.activity.RecycleListActivity;
 import cn.chuan.allcommon.activity.VewPagerListActivity;
+import cn.chuan.allcommon.activitys.dialog.LemonActivity;
 import cn.chuan.allcommon.adapter.MainAdapter;
 import cn.chuan.allcommon.common.ConStants;
 
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         list.add("Recycle样板模式");
         list.add("android基本工具类");
         list.add("九宫格图片展示样例");
-        list.add("arcgis图层添加Google&天地图");
+        list.add("Dialog");
         adapter = new MainAdapter(context, list);
         mainListview.setAdapter(adapter);
         mainListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -57,58 +58,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void gotos(int i) {
-        switch (i) {
-            case 0:
-                Intent intent = new Intent(context, DeleteItemListActivity.class);
-                Bundle bundle = new Bundle();
-                bundle.putString(ConStants.b1, list.get(i));
-                intent.putExtras(bundle);
-                startActivity(intent);
-                break;
-            case 1:
-                intent = new Intent(context, ABackActivity.class);
-                bundle = new Bundle();
-                bundle.putString(ConStants.b1, list.get(i));
-                intent.putExtras(bundle);
-                startActivity(intent);
-                break;
-            case 2:
-                intent = new Intent(context, LoadAnimActivity.class);
-                bundle = new Bundle();
-                bundle.putString(ConStants.b1, list.get(i));
-                intent.putExtras(bundle);
-                startActivity(intent);
-                break;
-            case 3:
-                intent = new Intent(context, VewPagerListActivity.class);
-                bundle = new Bundle();
-                bundle.putString(ConStants.b1, list.get(i));
-                intent.putExtras(bundle);
-                startActivity(intent);
-            case 4:
-                intent = new Intent(context, RecycleListActivity.class);
-                bundle = new Bundle();
-                bundle.putString(ConStants.b1, list.get(i));
-                intent.putExtras(bundle);
-                startActivity(intent);
-                break;
-            case 5:
-                intent = new Intent(context, AndroidUntilsActivity.class);
-                bundle = new Bundle();
-                bundle.putString(ConStants.b1, list.get(i));
-                intent.putExtras(bundle);
-                startActivity(intent);
-                break;
-            case 6:
-                intent = new Intent(context, NinePicActivity.class);
-                bundle = new Bundle();
-                bundle.putString(ConStants.b1, list.get(i));
-                intent.putExtras(bundle);
-                startActivity(intent);
-                break;
-            default:
-                break;
-        }
+    private void gotos(int position) {
+        Intent intent = new Intent(context, ConStants.ACTIVITY[position]);
+        Bundle bundle = new Bundle();
+        bundle.putString(ConStants.b1, list.get(position));
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 }

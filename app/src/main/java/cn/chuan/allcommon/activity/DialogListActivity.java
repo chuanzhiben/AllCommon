@@ -16,14 +16,14 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.chuan.allcommon.R;
-import cn.chuan.allcommon.activitys.viewpager.GradientTabStripActivity;
-import cn.chuan.allcommon.activitys.viewpager.ScrollingActivity;
-import cn.chuan.allcommon.activitys.viewpager.VPagerFActivity;
-import cn.chuan.allcommon.activitys.viewpager.VPagerfgActivity;
+import cn.chuan.allcommon.activitys.dialog.LemonActivity;
+import cn.chuan.allcommon.activitys.recycle.Recycle1Activity;
+import cn.chuan.allcommon.activitys.recycle.RecycleActivity;
+import cn.chuan.allcommon.activitys.recycle.SuperRecycleActivity;
 import cn.chuan.allcommon.adapter.MainAdapter;
 import cn.chuan.allcommon.common.ConStants;
 
-public class VewPagerListActivity extends Activity {
+public class DialogListActivity extends Activity {
     List<String> list;
     MainAdapter adapter;
     Activity context;
@@ -40,14 +40,14 @@ public class VewPagerListActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         ButterKnife.bind(this);
-        context = VewPagerListActivity.this;
+        context = DialogListActivity.this;
         Bundle bundle = getIntent().getExtras();
         name = bundle.getString(ConStants.b1);
+        tvTile.setText(name);
         list = new ArrayList<>();
-        list.add("滑动viewpager,嵌套fragment");
-        list.add("滑动viewpager,嵌套fragment,简约模式");
-        list.add("滑动viewpager,嵌套fragment,GradientTabStripActivity底部滑动动态模式");
-        list.add("向上滑动隐藏头信息的recycleview");
+        list.add("Dialoglemon样板模式");
+        list.add("Recycle样板模式FamiliarRecyclerView");
+        list.add("Recycle样板模式SuperRecycle");
         adapter = new MainAdapter(context, list);
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -56,34 +56,26 @@ public class VewPagerListActivity extends Activity {
                 gotos(i);
             }
         });
-        tvTile.setText(name);
     }
 
     private void gotos(int i) {
         switch (i) {
             case 0:
-                Intent intent = new Intent(context, VPagerFActivity.class);
+                Intent intent = new Intent(context, LemonActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putString(ConStants.b1, list.get(i));
                 intent.putExtras(bundle);
                 startActivity(intent);
                 break;
             case 1:
-                intent = new Intent(context, VPagerfgActivity.class);
+                intent = new Intent(context, Recycle1Activity.class);
                 bundle = new Bundle();
                 bundle.putString(ConStants.b1, list.get(i));
                 intent.putExtras(bundle);
                 startActivity(intent);
                 break;
             case 2:
-                intent = new Intent(context, GradientTabStripActivity.class);
-                bundle = new Bundle();
-                bundle.putString(ConStants.b1, list.get(i));
-                intent.putExtras(bundle);
-                startActivity(intent);
-                break;
-            case 3:
-                intent = new Intent(context, ScrollingActivity.class);
+                intent = new Intent(context, SuperRecycleActivity.class);
                 bundle = new Bundle();
                 bundle.putString(ConStants.b1, list.get(i));
                 intent.putExtras(bundle);

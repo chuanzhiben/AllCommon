@@ -43,13 +43,13 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         Fresco.initialize(this);
-        // 内存泄露检查工具
-        if (LeakCanary.isInAnalyzerProcess(this)) {
-            // This process is dedicated to LeakCanary for heap analysis.
-            // You should not init your app in this process.
-            return;
-        }
-        LeakCanary.install(this);
+//        // 内存泄露检查工具
+//        if (LeakCanary.isInAnalyzerProcess(this)) {
+//            // This process is dedicated to LeakCanary for heap analysis.
+//            // You should not init your app in this process.
+//            return;
+//        }
+//        LeakCanary.install(this);
         ourInstance = this;
         CrashUtils.getInstance().init(this);
         LogUtils.getBuilder(this).setTag("MyTag").setLog2FileSwitch(true).create();
